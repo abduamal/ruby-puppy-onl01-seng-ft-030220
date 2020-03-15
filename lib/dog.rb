@@ -3,7 +3,9 @@ class Dog
   attr_accessor :name, :save
   
   def self.all
-    @@all.each do ||
+    @@all.each do |pup|
+      puts pup.name
+    end
   end
   def save
     @@all << self
