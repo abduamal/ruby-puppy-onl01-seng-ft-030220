@@ -2,6 +2,9 @@ class Dog
   @@all = []
   attr_accessor :name, :save
   
+  def self.all
+    @@all
+  end
   def save
     @@all << self
   end
