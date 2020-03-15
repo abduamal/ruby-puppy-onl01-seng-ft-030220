@@ -3,9 +3,7 @@ class Dog
   attr_accessor :name, :save
   
   def self.all
-    @@all.each do |pup|
-      puts pup.name
-    end
+    @@all
   end
   def self.save
     @@all < self
@@ -15,7 +13,9 @@ class Dog
     @@all << self
   end
   def self.print_all
-    puts Dog.name
+    @@all.each do |pup|
+      puts pup.name
+    end
   end
   def self.clear_all
     @@all.clear
