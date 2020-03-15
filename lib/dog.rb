@@ -12,7 +12,7 @@ class Dog
     @name = name
     @save = save
   end
-  def print_all
+  def self.print_all
     puts Dog.name
   end
   def self.clear_all
