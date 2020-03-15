@@ -13,6 +13,9 @@ class Dog
     @save = save
   end
   def print_all
-    puts "Your name is #{name}!"
+    puts Dog.name
+  end
+  def clear_all
+    
   end
 end
