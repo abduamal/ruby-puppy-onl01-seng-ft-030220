@@ -7,6 +7,8 @@ class Dog
       puts pup.name
     end
   end
+  def self.save
+    
   def initialize(name)
     @name = name
     @@all << self
