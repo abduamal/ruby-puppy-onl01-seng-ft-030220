@@ -7,12 +7,9 @@ class Dog
       puts pup.name
     end
   end
-  def save
-    @@all << self
-  end
   def initialize(name, save)
     @name = name
-    @save = save
+    @@all << self
   end
   def self.print_all
     puts Dog.name
